@@ -1,0 +1,8 @@
+{
+  "name": "IGOFARADIO 97.6 FM",
+  "description": "Live 24/7 Ateker Community Radio from Malera, Bukedea, Teso Sub-Region, Uganda. Stream live audio, explore programs, send studio shoutouts, and stay connected.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
