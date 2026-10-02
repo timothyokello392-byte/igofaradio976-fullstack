@@ -6,7 +6,7 @@ const receivingAccounts: {
   recipientName: string | null;
   accent: string;
 }[] = [
-  { network: 'MTN Mobile Money', number: null, recipientName: null, accent: 'text-amber-400' },
+  { network: 'MTN Mobile Money', number: '+256778222238', recipientName: null, accent: 'text-amber-400' },
   { network: 'Airtel Money', number: null, recipientName: null, accent: 'text-rose-400' },
 ];
 
@@ -36,10 +36,13 @@ export function MonthlySupport() {
               <Smartphone className="w-5 h-5" aria-hidden="true" />
               {account.network}
             </h3>
-            {account.number && account.recipientName ? (
+            {account.number ? (
               <dl className="text-sm space-y-2">
                 <div><dt className="text-slate-400">Receiving number</dt><dd className="text-white font-bold break-words">{account.number}</dd></div>
-                <div><dt className="text-slate-400">Recipient name</dt><dd className="text-white font-semibold break-words">{account.recipientName}</dd></div>
+                <div><dt className="text-slate-400">Recipient name</dt><dd className="text-white font-semibold break-words">{account.recipientName ?? 'Awaiting confirmation'}</dd></div>
+                {!account.recipientName && (
+                  <div className="text-amber-300"><dt className="font-semibold">Before sending</dt><dd>Do not send money until the station confirms the registered recipient name.</dd></div>
+                )}
               </dl>
             ) : (
               <div className="text-sm">
