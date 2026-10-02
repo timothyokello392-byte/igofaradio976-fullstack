@@ -7,6 +7,7 @@ import { MusicCharts } from './components/MusicCharts';
 import { CommunityNews } from './components/CommunityNews';
 import { PresenterSpotlight } from './components/PresenterSpotlight';
 import { ContactModal } from './components/ContactModal';
+import { MonthlySupport } from './components/MonthlySupport';
 import { 
   Radio, Phone, MessageCircle, MapPin, Sparkles, Music, 
   Calendar, Newspaper, Heart, Volume2, Globe, ShieldCheck, Flame
@@ -88,6 +89,8 @@ export function App() {
           {/* Interactive Live Audio Player Card */}
           <AudioPlayer />
         </section>
+
+        <MonthlySupport />
 
         {/* Tab Navigation Pill Bar */}
         <section className="border-b border-slate-800 pb-4">
