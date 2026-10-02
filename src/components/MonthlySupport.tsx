@@ -6,7 +6,7 @@ const receivingAccounts: {
   recipientName: string | null;
   accent: string;
 }[] = [
-  { network: 'MTN Mobile Money', number: '+256778222238', recipientName: null, accent: 'text-amber-400' },
+  { network: 'MTN Mobile Money', number: '+256778222238', recipientName: 'Okello Timothy', accent: 'text-amber-400' },
   { network: 'Airtel Money', number: null, recipientName: null, accent: 'text-rose-400' },
 ];
 
